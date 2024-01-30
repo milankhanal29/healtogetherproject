@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Survey Data</title>
+    <style>
+        .td{
+            border: 1 solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1>Survey Data with Clustering</h1>
+    <table style="border: 2px solid black; border-collapse: separate; border-spacing: 10px;">
+        <tr>
+            <th>User ID</th>
+            <th>Q1</th>
+            <th>Q2</th>
+            <th>Q3</th>
+            <th>Q4</th>
+            <th>Q5</th>
+            <th>Q6</th>
+            <th>Q7</th>
+            <th>Q8</th>
+            <th>Q9</th>
+            <th>Q10</th>
+            <th>Q11</th>
+            <th>Cluster</th>
+        </tr>
+        {% for index, row in data.iterrows() %}
+            <tr>
+                <td>{{ row["user_id"] }}</td>
+                <td>{{ row["q1"] }}</td>
+                <td>{{ row["q2"] }}</td>
+                <td>{{ row["q3"] }}</td>
+                <td>{{ row["q4"] }}</td>
+                <td>{{ row["q3"] }}</td>
+                <td>{{ row["q5"] }}</td>
+                <td>{{ row["q6"] }}</td>
+                <td>{{ row["q7"] }}</td>
+                <td>{{ row["q8"] }}</td>
+                <td>{{ row["q9"] }}</td>
+                <td>{{ row["q10"] }}</td>
+                <td>{{ row["q11"] }}</td>
+                <td>{{ row["cluster"] }}</td>
+            </tr>
+        {% endfor %}
+    </table>
+    
+</body>
+</html>

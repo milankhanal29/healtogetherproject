@@ -1,0 +1,7 @@
+/.idea
+/bin
+/healtogether/node_modules
+healtogether/vendor
+healtogether/share
+healtogether/lib
+healtogether/lib64
